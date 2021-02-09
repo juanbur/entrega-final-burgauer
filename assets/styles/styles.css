@@ -46,7 +46,7 @@ header #menu-bar:checked ~ .menu {
 
 header .menu {
   position: absolute;
-  top: 50;
+  top: 50px;
   left: 0;
   width: 100%;
   height: 100vh;
