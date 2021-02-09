@@ -1,6 +1,8 @@
 // @import "reset.scss";
 @import "menu.scss";
 @import "colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
 
 * {
     margin: 0;
@@ -39,3 +41,6 @@ h1 {
 header .contenedor {
     display: table;
 }
+
+
+// font-family: 'Amatic SC', cursive;
