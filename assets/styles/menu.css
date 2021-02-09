@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 #menu-bar {
   display: none;
 }
@@ -30,12 +31,14 @@ header label {
 }
 
 .menu a {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4rem;
+  text-align: center;
   display: block;
   color: #fff;
-  height: 50px;
+  height: 100px;
   text-decoration: none;
   padding: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .menu a:hover {
