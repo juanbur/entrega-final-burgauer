@@ -86,25 +86,4 @@ section .titulo-1 .boton {
 .jumbotron h3 {
   text-align: center;
 }
-
-.hola {
-  background: orange;
-  height: 800px;
-  width: 1000px;
-  margin: auto;
-}
-
-.elemento1 {
-  color: red;
-  background-color: grey;
-  width: 300px;
-  height: 300px;
-}
-
-.elemento2 {
-  color: red;
-  background-color: green;
-  width: 300px;
-  height: 300px;
-}
 /*# sourceMappingURL=styles.css.map */
