@@ -23,10 +23,11 @@ header {
     height: 50px;
     background-color: $gris;
     color: $blanco;
-    // position: fixed; //para que el menú se quede pegado
+    position: fixed; //para que el menú se quede pegado
     top: 0; //para que empiece de la esquina superior izq.
     left: 0;
-    z-index: 100;
+    // para que quede siempre delante z-index
+    z-index: 100; 
     .contenedor {
         display: table;
     }
@@ -63,6 +64,58 @@ header {
             }
         }
     }
+}
+
+
+// section .titulo {
+//     background-color: grey;
+//     margin-top: 50px;
+//     width: 100%;
+//     height: 50px;
+//     h1 {
+//         margin-left: 6px;
+//     }
+//     button {
+//         float: right;
+//     }
+// }
+
+//main
+section .titulo-1 {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    .boton {
+    position: absolute;
+    right: 0;
+    // margin: 6px 0;
+    margin-right: 20px;
+    }
+}
+// jumbotron index
+.jumbotron h3 {
+    text-align: center;
+}
+// blog index
+.hola {
+    // outline: 10px solid orange;
+    background: orange;
+    height: 800px;
+    width: 1000px;
+    margin: auto;
+}
+.elemento1{
+    color: red;
+    background-color: grey;
+    width: 300px;
+    height: 300px;
+}
+
+.elemento2{
+    color: red;
+    background-color: green;
+    width: 300px;
+    height: 300px;
 }
 
 
