@@ -86,4 +86,50 @@ section .titulo-1 .boton {
 .jumbotron h3 {
   text-align: center;
 }
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.blog .texto {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog .texto p {
+  padding: 2rem;
+  line-height: 2rem;
+}
+
+.blog .foto {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog .foto img {
+  width: 80%;
+}
 /*# sourceMappingURL=styles.css.map */
