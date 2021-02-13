@@ -101,7 +101,7 @@ section .titulo-1 {
 
 .blog {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     .texto {
         flex-basis: 50%;
         height: 400px;
@@ -124,7 +124,31 @@ section .titulo-1 {
         img {
             width: 80%;
         }
+        
     }
+}
+
+//mediaquery blog
+@media (max-width:900px){
+    .blog{
+        display: flex;
+        flex-direction: column;
+        p {
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-top: 0;
+        }
+    }
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        p {
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-top: 0;
+        }
+    }
+
 }
 
 

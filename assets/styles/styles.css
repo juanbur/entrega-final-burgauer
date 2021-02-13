@@ -91,7 +91,7 @@ section .titulo-1 .boton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .blog .texto {
@@ -131,5 +131,36 @@ section .titulo-1 .boton {
 
 .blog .foto img {
   width: 80%;
+}
+
+@media (max-width: 900px) {
+  .blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 0;
+  }
+  .reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .reverse p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
