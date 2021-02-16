@@ -151,5 +151,61 @@ section .titulo-1 {
 
 }
 
+//banner-servicios
 
+.services {
+    width: 100%;
+    margin-bottom: 25px;
+}
 
+#banner {
+    margin-top: 50px;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .contenedor {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    h2 {
+        font-size: 28px;
+    }
+    a {
+        display: block;
+        width: 115px;
+        color: black;
+        text-decoration: none;
+        padding: 7px;
+        margin-top: 10px;
+        border: 3px solid black;
+        &:hover {
+            background-color: rgba(159, 122, 89, 0.5);
+        }
+    }
+}
+
+// grids servicios
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%; //se reparte en columnas el ancho total, también se pueden poner en px.
+    grid-template-rows: 400px 200px; //para modificar el alto de las filas, se puede poner auto y te agrega solo el necesario para el contenido. tambien minmax para establecer un minimo y max.
+    // gap: 1em; //espaciado. otra opcion es column-gap o row-gap y hace espaciado en fila o columna
+    
+    div {
+        // display: flex;
+        display: grid;
+        background-color: rgb(222, 218, 213);
+        padding: 1em;
+    .cuarto{
+        // display: inline-block;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 100px; //le agrega 100px de altura a cada uno de los elementos
+        // gap: 1em;
+    }
+    }
+}
