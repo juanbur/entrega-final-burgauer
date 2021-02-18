@@ -291,4 +291,39 @@ section .titulo-1 .boton {
     margin: 5rem 15rem 5rem 15rem;
   }
 }
+
+#info {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#info .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info-obra {
+  margin: 20px;
+}
+
+.info-obra img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.info-obra h4 {
+  margin: 10px;
+}
 /*# sourceMappingURL=styles.css.map */
