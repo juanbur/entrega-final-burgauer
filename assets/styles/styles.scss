@@ -336,4 +336,57 @@ section .titulo-1 {
 
 // About
 
+// card-about
+
+img.about {
+    width: 400px;
+    // height: 180px;
+    // border-radius: 50%;
+    // border: 5px solid #fff;
+}
+
+.grid-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    grid-template-rows: minmax(400px, auto);
+    div {
+        background-color: rgba(220, 204, 187, 0.5);
+        padding: 1em;
+        // &:hover {
+        //     border: 1px solid greenyellow;
+        // }
+        }
+        p,h3{
+            text-align: center;
+            padding-bottom: 5rem;
+            padding-top: 1rem;
+        }
+}
+
+// mediaquery grid-servicios
+@media (max-width:900px){
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        div img {
+            width: 300px;
+            margin: auto;
+        }
+        div h4 {
+            display: none;
+        }
+    }
+    .grid-1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        p,h3{
+            text-align: center;
+            padding-bottom: 2rem;
+            padding-top: 1rem;
+        }
+    }
+}
+
+
 
