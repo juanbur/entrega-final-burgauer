@@ -336,48 +336,80 @@ section .titulo-1 {
 
 // About
 
-// card-about
+//banner-about
 
-img.about {
-    width: 400px;
-    // height: 180px;
-    // border-radius: 50%;
-    // border: 5px solid #fff;
+.about {
+    width: 100%;
+    margin-bottom: 25px;
 }
+
+#banner-about {
+    margin-top: 50px;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .contenedor {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 800;
+        color: white;
+    }
+    a {
+        display: block;
+        width: 115px;
+        color: white;
+        text-decoration: none;
+        padding: 7px;
+        margin-top: 10px;
+        border: 3px solid white;
+        &:hover {
+            background-color: rgba(159, 122, 89, 0.5);
+        }
+    }
+    // texto-cafe
+    .message-cafe {
+        color: black;
+        border: none;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+}
+
+// seccion sobre mi parte grid
 
 .grid-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
+    // gap: 1em;
     grid-template-rows: minmax(400px, auto);
+    
     div {
-        background-color: rgba(220, 204, 187, 0.5);
+        display: grid;
+        justify-items: center; //alinea los elementos de forma horizontal
+        align-items: center; //alinea elementos de forma vertical
+        // background-color: rgba(220, 204, 187, 0.5);
         padding: 1em;
-        // &:hover {
-        //     border: 1px solid greenyellow;
-        // }
         }
         p,h3{
             text-align: center;
             padding-bottom: 5rem;
             padding-top: 1rem;
         }
+        img {
+            width: 70%;
+        }
 }
 
-// mediaquery grid-servicios
+// mediaquery grid-about
 @media (max-width:900px){
-    .grid {
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: auto;
-        div img {
-            width: 300px;
-            margin: auto;
-        }
-        div h4 {
-            display: none;
-        }
-    }
-    .grid-1 {
+    .grid-about {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
         p,h3{
@@ -385,8 +417,8 @@ img.about {
             padding-bottom: 2rem;
             padding-top: 1rem;
         }
+        img {
+            width: 50%;
+        }
     }
 }
-
-
-
