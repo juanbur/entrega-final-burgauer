@@ -422,3 +422,41 @@ section .titulo-1 {
         }
     }
 }
+
+
+// seccion contacto
+
+#container-contacto {
+    display: flex;
+    gap: 2em;
+    // background-color: white;
+    flex-wrap: wrap; //perimte que desborden los items y bajen en caso de que se achique el ancho total
+    justify-content: space-between;
+    margin-top: 20px;
+    .contacto {
+        display: flex;
+        // background-color: white;
+        width: 300px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // font-size: 28px;
+        span {
+            font-size: 28px;
+            height: 100px;   
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+ 
+    }
+}
+
+// media query contacto
+
+@media (max-width: 670px) {
+    #container-contacto {
+        justify-content: center;
+    }
+}
