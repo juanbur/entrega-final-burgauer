@@ -375,7 +375,7 @@ section .titulo-1 {
     }
     // texto-cafe
     .message-cafe {
-        color: black;
+        color:  rgb(43, 32, 24);
         border: none;
         font-size: 20px;
         margin-left: 50px;
@@ -433,6 +433,7 @@ section .titulo-1 {
     flex-wrap: wrap; //perimte que desborden los items y bajen en caso de que se achique el ancho total
     justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 40px;
     .contacto {
         display: flex;
         // background-color: white;
@@ -459,4 +460,29 @@ section .titulo-1 {
     #container-contacto {
         justify-content: center;
     }
+}
+
+// formulario
+
+.contact-form { 
+    background-image: url(../multimedia/background-form-1.jpg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    #formulario {
+    background-color: white;
+    padding: 16px;
+    // border: black solid thin;
+    border-radius: 5px;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    }
+    h2 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+.footer-contact {
+    margin-top: 30px;
 }

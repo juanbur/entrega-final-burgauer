@@ -371,7 +371,7 @@ section .titulo-1 .boton {
 }
 
 #banner-about .message-cafe {
-  color: black;
+  color: #2b2018;
   border: none;
   font-size: 20px;
   margin-left: 50px;
@@ -434,6 +434,7 @@ section .titulo-1 .boton {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 #container-contacto .contacto {
@@ -469,5 +470,28 @@ section .titulo-1 .boton {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.contact-form {
+  background-image: url(../multimedia/background-form-1.jpg);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contact-form #formulario {
+  background-color: white;
+  padding: 16px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.footer-contact {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
