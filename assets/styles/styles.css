@@ -400,6 +400,7 @@ section .titulo-1 .boton {
   text-align: center;
   padding-bottom: 5rem;
   padding-top: 1rem;
+  line-height: 35px;
 }
 
 .grid-about img {
