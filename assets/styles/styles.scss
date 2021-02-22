@@ -177,7 +177,7 @@ section .titulo-1 {
     a {
         display: block;
         width: 115px;
-        color: black;
+        color: $text-black;
         text-decoration: none;
         padding: 7px;
         margin-top: 10px;
@@ -223,7 +223,7 @@ section .titulo-1 {
     // gap: 1em;
     grid-template-rows: minmax(400px, auto);
     div {
-        background-color: rgba(220, 204, 187, 0.5);
+        background-color: $background-servicios;
         padding: 1em;
         // &:hover {
         //     border: 1px solid greenyellow;
