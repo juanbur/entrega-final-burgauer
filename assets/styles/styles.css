@@ -9,6 +9,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .contenedor {
   width: 98%;
   margin: auto;
@@ -83,8 +87,13 @@ section .titulo-1 .boton {
   margin-right: 20px;
 }
 
-.jumbotron h3 {
+.jumbotron a {
+  text-decoration: none;
+}
+
+.jumbotron a h3 {
   text-align: center;
+  color: black;
 }
 
 .blog {

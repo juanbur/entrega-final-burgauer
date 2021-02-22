@@ -13,6 +13,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 .contenedor {
     width: 98%;
     margin: auto;
@@ -93,9 +96,14 @@ section .titulo-1 {
     }
 }
 // jumbotron index
-.jumbotron h3 {
+.jumbotron a {
+    text-decoration: none;
+    h3 {
     text-align: center;
+    color: $text-black;
+    }
 }
+
 
 // blog index con flexbox
 
