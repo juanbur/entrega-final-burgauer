@@ -1,0 +1,509 @@
+@import "colores.scss";
+
+//estilos básicos para todo
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+//fuente gral
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: $gris;
+    color: $blanco;
+    position: fixed; //para que el menú se quede pegado
+    top: 0; //para que empiece de la esquina superior izq.
+    left: 0;
+    // para que quede siempre delante z-index
+    z-index: 100; 
+    .contenedor {
+        display: table;
+    }
+    label { //icono menu desplegable
+    float: right; 
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer; //aparece la mano cuando paso por el icono
+    }
+    #menu-bar {
+        display: none; //desaparece el icono del input
+        &:checked ~ .menu { //cuando input esté con el check, va a seleccionar el menú
+        transform: translateX(0%);
+        }
+    }
+    .menu {
+        position: absolute;
+        top: 50px; //para que empiece desde la esquina, abajo del header
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $gris-transparencia;
+        transition: all 0.5s;
+        transform: translateX(-100%);
+        a {
+            display: block;
+            color: $blanco;
+            height: 50px; //la altura de cada a.
+            text-decoration: none;
+            padding: 15px;
+            border-bottom: 1px solid $borde;
+            &:hover {
+                background-color: $background-hover;
+            }
+        }
+    }
+}
+
+
+// section .titulo {
+//     background-color: grey;
+//     margin-top: 50px;
+//     width: 100%;
+//     height: 50px;
+//     h1 {
+//         margin-left: 6px;
+//     }
+//     button {
+//         float: right;
+//     }
+// }
+
+//main
+section .titulo-1 {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    .boton {
+    position: absolute;
+    right: 0;
+    // margin: 6px 0;
+    margin-right: 20px;
+    }
+}
+// jumbotron index
+.jumbotron a {
+    text-decoration: none;
+    h3 {
+    text-align: center;
+    color: $text-black;
+    }
+}
+
+
+// blog index con flexbox
+
+.blog {
+    display: flex;
+    margin-bottom: 30px;
+    .texto {
+        flex-basis: 50%;
+        height: 400px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            padding: 2rem;
+            line-height: 2rem;
+        }
+    }
+    .foto {
+        flex-basis: 50%;
+        height: 400px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 80%;
+        }
+        
+    }
+}
+
+//mediaquery blog
+@media (max-width:900px){
+    .blog{
+        display: flex;
+        flex-direction: column;
+        p {
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-top: 0;
+        }
+    }
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        p {
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-top: 0;
+        }
+    }
+
+}
+
+//banner-servicios
+
+.services {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#banner {
+    margin-top: 50px;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .contenedor {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    h2 {
+        font-size: 28px;
+    }
+    a {
+        display: block;
+        width: 115px;
+        color: $text-black;
+        text-decoration: none;
+        padding: 7px;
+        margin-top: 10px;
+        border: 3px solid black;
+        &:hover {
+            background-color: rgba(159, 122, 89, 0.5);
+        }
+    }
+}
+
+// grids servicios
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%; //se reparte en columnas el ancho total, también se pueden poner en px.
+    grid-template-rows: 400px; //para modificar el alto de las filas, se puede poner auto y te agrega solo el necesario para el contenido. tambien minmax para establecer un minimo y max.
+    // gap: 1em; //espaciado. otra opcion es column-gap o row-gap y hace espaciado en fila o columna
+    div {
+        // display: flex;
+        display: grid;
+        // background-color: rgb(222, 218, 213);
+        padding: 1em;
+        overflow: hidden;
+        .grid-3 {
+            padding-top: 25px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            
+        }
+    }
+    
+}
+
+
+.background-grid {
+        background-color: rgb(249, 238, 225);
+    }
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // gap: 1em;
+    grid-template-rows: minmax(400px, auto);
+    div {
+        background-color: $background-servicios;
+        padding: 1em;
+        // &:hover {
+        //     border: 1px solid greenyellow;
+        // }
+        }
+        p,h3{
+            text-align: center;
+            padding-bottom: 5rem;
+            padding-top: 1rem;
+        }
+}
+
+// mediaquery grid-servicios
+@media (max-width:900px){
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        div img {
+            width: 300px;
+            margin: auto;
+        }
+        div h4 {
+            display: none;
+        }
+    }
+    .grid-1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        p,h3{
+            text-align: center;
+            padding-bottom: 2rem;
+            padding-top: 1rem;
+        }
+    }
+}
+
+//Seccion Proyectos
+
+// boton titulo
+.boton-insta {
+    background-image: url(../multimedia/fondo-insta.jpg);
+    border: none;
+}
+
+// section grid OFF
+// .grid-container {
+//     display: grid;
+//     grid-template-columns: auto auto auto;
+//     grid-gap: 10px;
+//     background-color: #2196F3;
+//     padding: 10px;
+//     div {
+//     background-color: rgba(255, 255, 255, 0.8);
+//     text-align: center;
+//     // padding: 100px 100px;
+//     font-size: 30px;
+        
+//     }
+// }
+// .item1 {
+//     grid-column-start: 1;
+//     grid-column-end: 3;
+// }
+// .item3 {
+//     grid-row-start: 2;
+//     grid-row-end: 4;
+// }
+
+
+//carousel proyectos
+
+@media (min-width:1100px) {
+    #carouselExampleFade {
+    // margin-left: 15rem;
+    // margin-right: 15rem;
+    // margin-bottom: 5rem;
+    // margin-top: 10px;
+    margin: 5rem 15rem 5rem 15rem;
+    }
+}
+
+
+// section proyectos actuales
+#info {
+    background-color: $gris;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    h3 {
+        padding-bottom: 20px;
+    }
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .info-obra {
+            margin: 20px;
+            transition: 1s;
+            &:hover {
+                transform: scale3d(1.3, 1.3, 1.3);
+            }
+            img {
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                border: 5px solid #fff;
+            }
+            h4 {
+                margin: 10px;
+            }
+        }
+    }
+}
+
+
+    
+    
+    
+
+
+// About
+
+//banner-about
+
+.about {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#banner-about {
+    margin-top: 50px;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .contenedor {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 800;
+        color: white;
+    }
+    a {
+        display: block;
+        width: 115px;
+        color: white;
+        text-decoration: none;
+        padding: 7px;
+        margin-top: 10px;
+        border: 3px solid white;
+        &:hover {
+            background-color: rgba(159, 122, 89, 0.5);
+        }
+    }
+    // texto-cafe
+    .message-cafe {
+        color:  rgb(43, 32, 24);
+        border: none;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+}
+
+// seccion sobre mi parte grid
+
+.grid-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // gap: 1em;
+    grid-template-rows: minmax(400px, auto);
+    
+    div {
+        display: grid;
+        justify-items: center; //alinea los elementos de forma horizontal
+        align-items: center; //alinea elementos de forma vertical
+        // background-color: rgba(220, 204, 187, 0.5);
+        padding: 1em;
+        }
+        p,h3{
+            text-align: center;
+            padding-bottom: 5rem;
+            padding-top: 1rem;
+            line-height: 35px;
+        }
+        img {
+            width: 70%;
+        }
+}
+
+// mediaquery grid-about
+@media (max-width:900px){
+    .grid-about {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        p,h3{
+            text-align: center;
+            padding-bottom: 2rem;
+            padding-top: 1rem;
+        }
+        img {
+            width: 50%;
+        }
+    }
+}
+
+
+// seccion contacto
+
+#container-contacto {
+    display: flex;
+    gap: 2em;
+    // background-color: white;
+    flex-wrap: wrap; //perimte que desborden los items y bajen en caso de que se achique el ancho total
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    .contacto {
+        display: flex;
+        // background-color: white;
+        width: 300px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // font-size: 28px;
+        span {
+            font-size: 28px;
+            height: 100px;   
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+ 
+    }
+}
+
+// media query contacto
+
+@media (max-width: 670px) {
+    #container-contacto {
+        justify-content: center;
+    }
+}
+
+// formulario
+
+.contact-form { 
+    background-image: url(../multimedia/background-form-1.jpg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    #formulario {
+    background-color: white;
+    padding: 16px;
+    // border: black solid thin;
+    border-radius: 5px;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    }
+    h2 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+.footer-contact {
+    margin-top: 30px;
+}
