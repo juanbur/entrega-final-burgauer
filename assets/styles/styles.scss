@@ -84,8 +84,9 @@ header {
 // }
 
 //main
+//titulo index
 section .titulo-1 {
-    margin-top: 50px;
+    margin-top: 25px;
     width: 100%;
     height: 50px;
     .boton {
@@ -103,8 +104,30 @@ section .titulo-1 {
     color: $text-black;
     }
 }
-
-
+//titulo proyectos
+section .titulo-2 {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    .boton {
+    position: absolute;
+    right: 0;
+    // margin: 6px 0;
+    margin-right: 20px;
+    }
+}
+// titulo contacto
+section .titulo-3 {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    .boton {
+    position: absolute;
+    right: 0;
+    // margin: 6px 0;
+    margin-right: 20px;
+    }
+}
 // blog index con flexbox
 
 .blog {

@@ -76,7 +76,7 @@ header .menu a:hover {
 }
 
 section .titulo-1 {
-  margin-top: 50px;
+  margin-top: 25px;
   width: 100%;
   height: 50px;
 }
@@ -94,6 +94,30 @@ section .titulo-1 .boton {
 .jumbotron a h3 {
   text-align: center;
   color: black;
+}
+
+section .titulo-2 {
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+}
+
+section .titulo-2 .boton {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+section .titulo-3 {
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+}
+
+section .titulo-3 .boton {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
 }
 
 .blog {
