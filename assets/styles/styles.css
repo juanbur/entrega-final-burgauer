@@ -176,6 +176,9 @@ section .titulo-3 .boton {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .blog .texto {
+    height: 300px;
+  }
   .blog p {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -203,6 +206,9 @@ section .titulo-3 .boton {
   .blog p {
     margin-bottom: 0px;
     padding-top: 10px;
+  }
+  .blog p .texto {
+    height: 250px;
   }
 }
 
