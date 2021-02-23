@@ -197,6 +197,14 @@ section .titulo-3 .boton {
   }
 }
 
+@media (max-width: 415px) {
+  .blog p {
+    background-color: blue;
+    margin-bottom: 0px;
+    padding-top: 10px;
+  }
+}
+
 .services {
   width: 100%;
   margin-bottom: 25px;
@@ -421,6 +429,12 @@ section .titulo-3 .boton {
   margin-left: 50px;
 }
 
+@media (max-width: 415px) {
+  .message-cafe {
+    background-color: rgba(230, 206, 178, 0.5);
+  }
+}
+
 .grid-about {
   display: -ms-grid;
   display: grid;
@@ -499,11 +513,6 @@ section .titulo-3 .boton {
           align-items: center;
 }
 
-#container-contacto .contacto span {
-  font-size: 28px;
-  height: 100px;
-}
-
 #container-contacto .contacto a {
   text-decoration: none;
   color: black;
@@ -514,6 +523,9 @@ section .titulo-3 .boton {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -538,5 +550,9 @@ section .titulo-3 .boton {
 
 .footer-contact {
   margin-top: 30px;
+}
+
+footer {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

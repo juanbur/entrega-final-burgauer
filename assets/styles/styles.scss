@@ -182,6 +182,14 @@ section .titulo-3 {
 
 }
 
+@media (max-width: 415px) {
+    .blog p {
+        background-color: blue;
+        margin-bottom: 0px;
+        padding-top: 10px;
+    }
+}
+
 //banner-servicios
 
 .services {
@@ -424,7 +432,11 @@ section .titulo-3 {
         margin-left: 50px;
     }
 }
-
+@media (max-width:415px) {
+    .message-cafe {
+        background-color: rgba(230, 206, 178, 0.5);
+    }
+}
 // seccion sobre mi parte grid
 
 .grid-about {
@@ -486,13 +498,14 @@ section .titulo-3 {
         justify-content: center;
         align-items: center;
         // font-size: 28px;
-        span {
-            font-size: 28px;
-            height: 100px;   
-        }
+        // span {
+        //     font-size: 28px;
+        //     height: 100px;   
+        // }
         a {
             text-decoration: none;
             color: black;
+            // padding-right: 4px;
         }
  
     }
@@ -503,6 +516,19 @@ section .titulo-3 {
 @media (max-width: 670px) {
     #container-contacto {
         justify-content: center;
+        display: flex;
+        // .contacto {
+        //     display: flex;
+        //     flex-direction: row;
+        //     span {
+        //         float: left; 
+        //         font-size: 28px;
+        //         margin: 6px 0;
+        //     }
+        //     a {
+        //         font-size: 20px;
+        //     }
+        // }
     }
 }
 
@@ -529,4 +555,9 @@ section .titulo-3 {
 
 .footer-contact {
     margin-top: 30px;
+}
+
+footer{
+    // background-color: bisque;
+    margin-top: 20px;
 }
