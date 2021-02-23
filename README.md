@@ -1,7 +1,7 @@
 # entrega-final-burgauer
 camada 13290 coderhouse
 
-Hola! Muchas gracias por tu tiempo. Mi nombre es Juan Burgauer, soy estudiante de Desarrollo Web de Coderhouse. Puedes visualizar la página web copiando la siguiente url: https://cbarq.netlify.app/index.html
+Hola! Muchas gracias por tu tiempo. Mi nombre es Juan Burgauer, soy estudiante de Desarrollo Web de Coderhouse. Puedes visualizar la página web copiando la siguiente url: https://cbarq.netlify.app/
 
 **Detalles de la entrega final:** 
 1. La entrega final está agregada al main. 
