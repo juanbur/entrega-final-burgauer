@@ -179,6 +179,9 @@ section .titulo-3 .boton {
   .blog .texto {
     height: 300px;
   }
+  .blog .foto {
+    height: 300px;
+  }
   .blog p {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -209,6 +212,9 @@ section .titulo-3 .boton {
   }
   .blog p .texto {
     height: 250px;
+  }
+  .blog p .foto {
+    height: 300px;
   }
 }
 
