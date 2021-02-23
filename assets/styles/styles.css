@@ -180,6 +180,7 @@ section .titulo-3 .boton {
     margin-left: 3rem;
     margin-right: 3rem;
     margin-top: 0;
+    margin-bottom: 10px;
   }
   .reverse {
     display: -webkit-box;
@@ -194,12 +195,12 @@ section .titulo-3 .boton {
     margin-left: 3rem;
     margin-right: 3rem;
     margin-top: 0;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 415px) {
   .blog p {
-    background-color: blue;
     margin-bottom: 0px;
     padding-top: 10px;
   }
@@ -553,6 +554,7 @@ section .titulo-3 .boton {
 }
 
 footer {
-  margin-top: 20px;
+  padding-top: 20px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
